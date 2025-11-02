@@ -125,7 +125,7 @@ model Shipment {
   id                Int                 @id @default(autoincrement())
   paymentStatus     String              @map("payment_status")
   deliveryStatus    String?             @map("delivery_status")
-  trackingNumber    String?             @unique @map("tracking_number")
+  trackingNumber    String?             @map("tracking_number")
   qrCodeImage       String?             @map("qr_code_image")
   price             Float?
   distance          Float?
