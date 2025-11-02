@@ -29,7 +29,7 @@ class PermissionResponse {
     resource: string;
 }
 
-class UserResponse {
+export class UserResponse {
     @Expose()
     id: number;
 
@@ -47,7 +47,7 @@ class UserResponse {
 
     @Expose()
     @Type(() => RoleResponse)
-    roles: RoleResponse[];
+    role: RoleResponse[];
 }
 
 
