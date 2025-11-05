@@ -1,6 +1,6 @@
 import { Expose, Type } from "class-transformer";
 
-class RoleResponse {
+export class RoleResponse {
     @Expose()
     id: number;
 
@@ -15,7 +15,7 @@ class RoleResponse {
     permissions: PermissionResponse[];
 }
 
-class PermissionResponse {
+export class PermissionResponse {
     @Expose()
     id: number;
 
